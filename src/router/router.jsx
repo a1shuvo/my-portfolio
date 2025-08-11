@@ -1,10 +1,11 @@
 import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router";
 import Loading from "../components/Loading";
+import ProjectLayout from "../layouts/ProjectLayout";
+import ProjectDetails from "../pages/ProjectDetails";
 
-// Lazy load pages
 const Home = lazy(() => import("../pages/Home"));
-const ProjectDetails = lazy(() => import("../pages/ProjectDetails"));
+const ProjectsPreview = lazy(() => import("../components/ProjectsPreview"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
 const router = createBrowserRouter([
@@ -15,14 +16,22 @@ const router = createBrowserRouter([
         <Home />
       </Suspense>
     ),
+  },
+  {
+    path: "project",
+    element: (
+      <Suspense fallback={<Loading />}>
+        <ProjectLayout />
+      </Suspense>
+    ),
     children: [
       {
-        path: "project/:id",
-        element: (
-          <Suspense fallback={<Loading />}>
-            <ProjectDetails />
-          </Suspense>
-        ),
+        index: true,
+        element: <ProjectsPreview />,
+      },
+      {
+        path: ":id",
+        element: <ProjectDetails />,
       },
     ],
   },

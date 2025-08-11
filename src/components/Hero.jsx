@@ -20,10 +20,14 @@ const itemVariants = {
 
 export default function Hero() {
   return (
-    <section className="relative bg-white min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden">
+    <section
+      id="hero"
+      className="relative bg-white min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden"
+      aria-label="Hero Section"
+    >
       {/* Abstract Background Blob */}
       <motion.div
-        className="absolute top-[-15%] left-[-10%] w-[450px] h-[450px] bg-gradient-to-tr from-indigo-300 via-purple-400 to-pink-400 rounded-full filter blur-3xl opacity-30 z-0"
+        className="absolute top-[-15%] left-[-10%] w-[450px] h-[450px] rounded-full filter blur-3xl opacity-30 z-0 bg-gradient-to-tr from-indigo-300 via-purple-400 to-pink-400"
         animate={{
           scale: [1, 1.15, 1],
           rotate: [0, 10, 0],
@@ -41,7 +45,7 @@ export default function Hero() {
         animate="visible"
       >
         {/* Left Text Section */}
-        <div className="flex-1 text-center md:text-left max-w-xl space-y-6">
+        <div className="flex-1 max-w-xl text-center md:text-left space-y-6">
           <motion.p
             className="text-gray-700 font-medium tracking-wide uppercase"
             variants={itemVariants}
@@ -60,6 +64,7 @@ export default function Hero() {
           <motion.h2
             className="text-indigo-600 text-3xl md:text-4xl font-semibold h-12"
             variants={itemVariants}
+            aria-live="polite"
           >
             <Typewriter
               words={[
@@ -90,11 +95,11 @@ export default function Hero() {
           <motion.a
             href="/resume.pdf"
             download
-            className="mt-2 inline-flex items-center gap-3 bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105"
+            className="mt-2 inline-flex items-center gap-3 bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             variants={itemVariants}
             aria-label="Download Resume"
           >
-            <HiDownload className="w-6 h-6" />
+            <HiDownload className="w-6 h-6" aria-hidden="true" />
             <span>Resume</span>
           </motion.a>
         </div>
