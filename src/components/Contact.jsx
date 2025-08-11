@@ -70,7 +70,7 @@ export default function Contact() {
       className="relative bg-gradient-to-tr from-indigo-50 via-white to-pink-50 min-h-[70vh] flex flex-col items-center justify-center px-6 sm:px-4 md:px-6 lg:px-8 py-20"
     >
       <motion.h2
-        className="text-4xl sm:text-5xl font-extrabold text-indigo-700 mb-12 sm:mb-16 border-b-4 border-indigo-400 inline-block pb-2 text-center select-none"
+        className="text-2xl md:text-3xl font-extrabold text-indigo-700 border-b-4 border-indigo-400 inline-block pb-2 text-center select-none"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -80,7 +80,7 @@ export default function Contact() {
       </motion.h2>
 
       <motion.div
-        className="max-w-5xl w-full bg-white shadow-2xl rounded-3xl p-8 sm:p-10 md:p-16 flex flex-col md:flex-row gap-10 md:gap-12"
+        className="max-w-6xl w-full bg-white shadow-2xl rounded-3xl p-4 md:p-8 flex flex-col md:flex-row gap-10 md:gap-12"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

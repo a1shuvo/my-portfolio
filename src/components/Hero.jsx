@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative bg-white min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden"
+      className="relative bg-white min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20 py-16 overflow-hidden"
       aria-label="Hero Section"
     >
       {/* Abstract Background Blob */}

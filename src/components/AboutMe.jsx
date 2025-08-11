@@ -18,7 +18,7 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="relative bg-white min-h-[70vh] flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden pt-16 pb-24"
+      className="relative bg-white min-h-[70vh] flex items-center justify-center px-6 md:px-12 lg:px-20 overflow-hidden py-16"
       aria-label="About Me Section"
     >
       {/* Left Abstract Background Blob */}
@@ -55,7 +55,7 @@ export default function AboutMe() {
         viewport={{ once: true, amount: 0.6 }}
       >
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-indigo-600 border-b-4 border-indigo-400 pb-3 mb-10"
+          className="text-2xl md:text-3xl font-extrabold text-indigo-600 border-b-4 border-indigo-400 pb-3 mb-10"
           variants={itemVariants}
         >
           About Me

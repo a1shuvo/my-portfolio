@@ -52,7 +52,7 @@ export default function Education() {
     >
       <motion.h2
         id="education-heading"
-        className="text-indigo-600 text-4xl md:text-5xl font-extrabold text-center mb-10"
+        className="text-indigo-600 text-2xl md:text-3xl font-extrabold text-center mb-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.7 }}

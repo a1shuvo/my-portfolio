@@ -6,7 +6,6 @@ import projects from "../data/projects";
 
 export default function ProjectDetails() {
   const { id } = useParams();
-  console.log("Project ID from URL:", id);
 
   const navigate = useNavigate();
 
@@ -37,7 +36,7 @@ export default function ProjectDetails() {
   return (
     <section className="max-w-5xl mx-auto px-6 py-16">
       {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-indigo-600 mb-8 text-center">
+      <h1 className="text-2xl md:text-3xl font-extrabold text-indigo-600 mb-8 text-center">
         {title}
       </h1>
 

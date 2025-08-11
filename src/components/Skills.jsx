@@ -68,7 +68,7 @@ export default function Skills() {
 
       {/* Section Heading */}
       <motion.h2
-        className="relative z-10 text-4xl md:text-5xl font-extrabold text-indigo-600 border-b-4 border-indigo-400 pb-3 mb-14"
+        className="relative z-10 text-2xl md:text-3xl font-extrabold text-indigo-600 border-b-4 border-indigo-400 pb-3 mb-14"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
