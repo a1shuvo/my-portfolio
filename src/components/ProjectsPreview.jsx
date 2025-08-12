@@ -18,7 +18,7 @@ export default function ProjectsPreview() {
       className="bg-gradient-to-tr from-indigo-50 to-white min-h-[75vh] px-4 sm:px-6 md:px-10 lg:px-16 py-16"
     >
       {/* Section Heading */}
-      <div className="flex justify-center mb-16">
+      <div className="flex justify-center mb-14">
         <h2 className="relative text-indigo-700 text-2xl md:text-3xl font-extrabold max-w-max pb-3 cursor-default select-none">
           Projects
           <span className="absolute bottom-0 left-0 w-full h-1 bg-indigo-400 rounded-full animate-underline" />

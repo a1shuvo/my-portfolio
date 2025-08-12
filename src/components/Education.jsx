@@ -51,7 +51,6 @@ export default function Education() {
       aria-labelledby="education-heading"
     >
       <motion.h2
-        id="education-heading"
         className="text-indigo-600 text-2xl md:text-3xl font-extrabold text-center mb-10"
         initial="hidden"
         whileInView="visible"

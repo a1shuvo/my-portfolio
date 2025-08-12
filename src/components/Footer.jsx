@@ -12,7 +12,7 @@ export default function Footer() {
 
         {/* Center: Navigation links */}
         <nav className="flex space-x-6 text-sm md:text-base">
-          <a href="#home" className="hover:text-white transition-colors">
+          <a href="#hero" className="hover:text-white transition-colors">
             Home
           </a>
           <a href="#projects" className="hover:text-white transition-colors">

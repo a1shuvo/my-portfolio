@@ -47,7 +47,7 @@ export default function Hero() {
         {/* Left Text Section */}
         <div className="flex-1 max-w-xl text-center md:text-left space-y-6">
           <motion.p
-            className="text-gray-700 font-medium tracking-wide uppercase"
+            className="text-gray-700 font-medium tracking-wide uppercase fira-font"
             variants={itemVariants}
           >
             Hello, I am

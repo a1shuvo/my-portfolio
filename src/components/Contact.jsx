@@ -70,7 +70,7 @@ export default function Contact() {
       className="relative bg-gradient-to-tr from-indigo-50 via-white to-pink-50 min-h-[70vh] flex flex-col items-center justify-center px-6 sm:px-4 md:px-6 lg:px-8 py-20"
     >
       <motion.h2
-        className="text-2xl md:text-3xl font-extrabold text-indigo-700 border-b-4 border-indigo-400 inline-block pb-2 text-center select-none"
+        className="text-2xl md:text-3xl font-extrabold text-indigo-700 border-b-4 border-indigo-400 inline-block pb-2 mb-4 text-center select-none"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
