@@ -86,7 +86,7 @@ export default function Navbar() {
         {/* Resume Button */}
         <div className="hidden md:flex">
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1gffVTCv_lDM6LJXRf-pQ_HQ6wIImlCGl/view?usp=sharing"
             download
             className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md shadow-md font-semibold transition-transform hover:scale-105"
             aria-label="Download Resume"
@@ -119,7 +119,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1gffVTCv_lDM6LJXRf-pQ_HQ6wIImlCGl/view?usp=sharing"
                 download
                 className="flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md shadow-md font-semibold transition-transform hover:scale-105"
                 aria-label="Download Resume"

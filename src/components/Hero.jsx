@@ -93,7 +93,7 @@ export default function Hero() {
           <SocialLinks />
 
           <motion.a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1gffVTCv_lDM6LJXRf-pQ_HQ6wIImlCGl/view?usp=sharing"
             download
             className="mt-2 inline-flex items-center gap-3 bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400"
             variants={itemVariants}
